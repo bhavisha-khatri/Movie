@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:background="@color/main_background"
-    tools:context=".LoginActivity">
+    tools:context=".Activity.LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -74,18 +76,18 @@
                 android:textSize="16sp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button2"
+                android:id="@+id/loginBtn"
+                style="@android:style/Widget.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:background="@drawable/btn_background"
-                style="@android:style/Widget.Button"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"/>
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/btn_background"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView5"
